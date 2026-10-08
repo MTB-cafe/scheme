@@ -1,0 +1,7 @@
+# Allow developers/parsers to fetch the schema from any domain
+/*
+  Access-Control-Allow-Origin: *
+
+# Ensure XSD files are served with the correct XML standard type
+/1.0/*.xsd
+  Content-Type: application/xml; charset=utf-8
