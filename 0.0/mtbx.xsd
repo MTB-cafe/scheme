@@ -16,10 +16,11 @@
 			<xs:documentation>Standardized difficulty levels for trails and features.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="easiest"/>
 			<xs:enumeration value="easy"/>
 			<xs:enumeration value="medium"/>
-			<xs:enumeration value="hard"/>
-			<xs:enumeration value="expert"/>
+			<xs:enumeration value="difficult"/>
+			<xs:enumeration value="extremely difficult"/>
 		</xs:restriction>
 	</xs:simpleType>
 
