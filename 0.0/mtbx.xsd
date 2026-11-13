@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<!-- ! THIS IS A PROTOTYPE ! -->
+<!-- ! DO   NOT  USE   YET ! -->
+
+<!-- █▄█ ▀█▀ █▀▄   █▀▀ █▀█ █▀▀ █▀▀ -->
+<!-- █▀█  █  █▀▄   █   █▀█ █▀  █▀  -->
+<!-- ▀ ▀  ▀  ▀▀  ▀ ▀▀▀ ▀ ▀ ▀   ▀▀▀ -->
+
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="http://std.mtb.cafe/0.0/mtbx"
 	xmlns:mtbx="http://std.mtb.cafe/0.0/mtbx"
 	
@@ -16,15 +24,19 @@
 			<xs:documentation>Standardized difficulty levels for trails and features.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="easiest"/>
-			<xs:enumeration value="easy"/>
-			<xs:enumeration value="medium"/>
-			<xs:enumeration value="difficult"/>
-			<xs:enumeration value="extremely difficult"/>
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
 
-			<xs:enumeration value="unrated"/>
+			<xs:enumeration value="unknown"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<!-- TODO: Danger. -->
+
+	<!-- TODO: Surface. -->
 
 	<xs:simpleType name="FeatureType">
 		<xs:annotation>
@@ -111,6 +123,8 @@
 			<xs:attribute name="waypoint_type" type="xs:string" use="required"/> <!-- TODO: ... -->
 		</xs:complexType>
 	</xs:element>
+
+	<!-- TODO: Forks. -->
 
 	<xs:element name="feature_ref">
 		<xs:annotation>
