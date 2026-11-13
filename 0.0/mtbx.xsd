@@ -21,6 +21,8 @@
 			<xs:enumeration value="medium"/>
 			<xs:enumeration value="difficult"/>
 			<xs:enumeration value="extremely difficult"/>
+
+			<xs:enumeration value="unrated"/>
 		</xs:restriction>
 	</xs:simpleType>
 
